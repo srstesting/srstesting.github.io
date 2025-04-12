@@ -17,5 +17,18 @@
         <p>LinkedIn</p>
         <p>Resume</p>
         <p>email</p>
+
+        <div id="emoji">😀</div>
+    
+        <script>
+        const emojis = ['😀', '😎', '🎉', '🚀', '🌟'];
+        let index = 0;
+    
+        setInterval(() => {
+          index = (index + 1) % emojis.length;
+          document.getElementById('emoji').textContent = emojis[index];
+        }, 2000); // change every 2000ms (2 seconds)
+        </script>
+        
     </body>
 </html>
