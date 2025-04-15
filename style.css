@@ -83,8 +83,11 @@ border-radius: 4px;
 }
 
 .container{
-padding-top: 75%; /* 4:3 Aspect Ratio */
-
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+flex-wrap: wrap;
 }
 
 .card iframe{
