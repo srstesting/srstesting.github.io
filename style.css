@@ -64,6 +64,7 @@ margin-left: 6rem;
 
 .container{
 display: flex;
+align-items: top;
 justify-content: flex-start;
 flex-wrap: wrap;
 }
