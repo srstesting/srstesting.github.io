@@ -76,7 +76,8 @@ background: #f7f7f7;
 }
 
 .card .content{
-padding: 1rem;
+margin-right: 1rem;
+margin-left: 1rem;
 }
 
 .responsive-iframe{
