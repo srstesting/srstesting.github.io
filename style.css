@@ -81,7 +81,28 @@ background-color: #f0f0f0;
 color: black; 
 border-radius: 4px;
 }
-            
+
+.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.card iframe{
+width: 100%
+}
+
+.container .card{
+flex: 1 0 20em;
+background: white;
+}
+
+.card .content{
+padding: 15px;
+}
+    
 .button1:hover {
 background-color: #969696;
 color: white;
