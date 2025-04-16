@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-        <!-- TO DO: edit card contents, make cards show vertically on mobile, underline animation, consider multiple pages -->
-        <!--https://stackoverflow.com/questions/39550403/css-displayinline-block-changes-text-size-on-mobile-->
-        <link rel="stylesheet" href="style.css">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- TO DO: make whale poster smaller, edit card contents, underline animation, change colors, consider multiple pages -->
         
+        <link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>&#128075; Rachel Lee</title>
 		
     </head>
     
     <body>
-	<p class="title">Rachel Lee</p>
-	<p class="bold">website under construction! :)</p>
-	<p class="bold">Scientific illustrator with a lifelong passion for art, science, and technology.</p>
-	<p class="medium">Currently working on...</p>
-	<!-- x at pni, y at joshua -->
-	<p class="medium">Loves <span id="emoji">&#127912;</span></p> <!-- utf-8 -->
-	<br>
-	<a class="medium" href="http://linkedin.com/in/rachel-lee7" target="_blank">LinkedIn</a>
-	<a class="medium" href="assets/RachelLee_resume.pdf" target="_blank" style= "display: inline-block; margin-left: 1rem">Download resume</a>
-	<p style="color:#078adb" class="medium"><span class="hover-underline pointer" onclick="showPopup(); 
-	    copyToClipboard('rach.lee.arts@gmail.com')">rach.lee.arts@gmail.com</span> &#128203;
-	    <span id="popup" class="popup-text" style=color:black> Copied!</span></p>
-	<br>
-	<br>
-	<!--class="responsive-iframe"-->
-	<p class="bold">Projects</p>
-	<div class="container">
-	    <div class="card">
-		<iframe width="420" height="315"
-		    src="https://youtube.com/embed/8kOj7WmjFhU">
-		</iframe>
-		<div class="content">
-		    <p class="bold">MitoMover</p>
-		    <p class="small">*github link*</p>
-		    <p class="small">A VR experience that shrinks the user inside a mammalian cell to teach about mitochondrial dynamics.</p>
-		    <p class="small">Master's dissertation project created during the 2024 Glasgow University/Glasgow School of Art MSc Medical Visualization and Human Anatomy program.</p>
-					<p class="small">Publication in press.</p>
-		</div>
-	    </div>
 	
-	    <div class="card">
-		<iframe width="420" height="315"
-		    src="https://youtube.com/embed/fTFsedqaJig">
-		</iframe>
-		<div class="content">
-		    <p class="bold">Street FightEAR</p>
-		    <p class="small">*github link*</p>
-		    <p class="small">An interactive application that educates young adults participating in contact sports about cauliflower ear.</p>
-		    <p class="small">Group project made during the 2024 Glasgow University/Glasgow School of Art MSc Medical Visualization and Human Anatomy program.</p>
+	<div class="wrapper">
+		<p class="title">Rachel Lee</p>
+		<p class="bold">website under construction! :)</p>
+		<p class="bold">Scientific illustrator with a lifelong passion for art, science, and technology.</p>
+		<p class="medium">Currently working on...</p>
+		<!-- x at pni, y at joshua -->
+		<p class="medium">Loves <span id="emoji">&#127912;</span></p> <!-- utf-8 -->
+		<br>
+		<a class="medium" href="http://linkedin.com/in/rachel-lee7" target="_blank">LinkedIn</a>
+		<a class="medium" href="assets/RachelLee_resume.pdf" target="_blank" style= "display: inline-block; margin-left: 1rem">Download resume</a>
+		<p style="color:#078adb" class="medium"><span class="hover-underline pointer" onclick="showPopup(); 
+			copyToClipboard('rach.lee.arts@gmail.com')">rach.lee.arts@gmail.com</span> &#128203;
+			<span id="popup" class="popup-text" style=color:black> Copied!</span></p>
+		
+		<br><br>
+		
+		<p class="bold">Projects</p>
+		<div class="container">
+			<div class="card">
+				<div class="iframe-wrapper">
+					<iframe
+						src="https://youtube.com/embed/8kOj7WmjFhU" frameborder="0">
+					</iframe>
+				</div>
+				<div class="content">
+					<p class="bold">MitoMover</p>
+					<p class="medium">*github link*</p>
+					<p class="medium">A VR experience that shrinks the user inside a mammalian cell to teach about mitochondrial dynamics.</p>
+					<p class="medium">Master's dissertation project created during the 2024 Glasgow University/Glasgow School of Art MSc Medical Visualization and Human Anatomy program.</p>
+					<p class="medium">Publication in press.</p>
+				</div>
+			</div>
+		
+			<div class="card">
+				<div class="iframe-wrapper">
+					<iframe
+						src="https://youtube.com/embed/fTFsedqaJig" frameborder="0">
+					</iframe>
+				</div>
+				<div class="content">
+					<p class="bold">Street FightEAR</p>
+					<p class="medium">*github link*</p>
+					<p class="medium">An interactive application that educates young adults participating in contact sports about cauliflower ear.</p>
+					<p class="medium">Group project made during the 2024 Glasgow University/Glasgow School of Art MSc Medical Visualization and Human Anatomy program.</p>
+				</div>
+			</div>
 		</div>
-	    </div>
-	</div>
-	<br>
-	<br>
-	<p class="bold">Other works</p>
-		<!-- butt talks, segmentation, bicep animation, monterey bay -->
-	<div class="container">
-		<div class="card">
-		<img src="assets/bicep_anim.gif" alt="bicep_anim.gif">
-		<!--<img src="assets/test.png" alt="test.png" style="width:128px;height:128px;">-->
-		<div class="content">
-		    <p class="bold">Bicep flex animation</p>
-		    <p class="small">Softwares: 3DS Max, ZBrush</p>
-		    <p class="small">MedVis</p>
-		</div>
-		</div>
+		
+		<br><br>
+		
+		<p class="bold">Other works</p>
+		<div class="container">
+			<div class="card">
+				<img src="assets/bicep_anim.gif" alt="bicep_anim.gif">
+				<div class="content">
+					<p class="bold">Bicep flex animation</p>
+					<p class="medium">Softwares: 3DS Max, ZBrush</p>
+					<p class="medium">MedVis</p>
+				</div>
+			</div>
 
-	    <div class="card">
-		<img src="assets/seg.png" alt="segmentation.png">
-		<div class="content">
-		    <p class="bold">Medical image segmentation</p>
-		    <p class="small">Software: 3D Slicer</p>
-		    <p class="small">MedVis</p>
-		</div>
-		</div>
-			
 			<div class="card">
-		<iframe width="420" height="315"
-		    src="https://youtube.com/embed/3YAs7QTSXOM">
-		</iframe>
-		<div class="content">
-		    <p class="bold">Adobe Animate animation reel</p>
-		    <p class="small">Softwares: Illustrator, Animate</p>
-		    <p class="small">Butt Talks</p>
-		</div>
-		</div>
-			
+				<img src="assets/seg.png" alt="segmentation.png">
+				<div class="content">
+					<p class="bold">Medical image segmentation</p>
+					<p class="medium">Software: 3D Slicer</p>
+					<p class="medium">MedVis</p>
+				</div>
+			</div>
+				
 			<div class="card">
-		<img src="assets/whale.png" alt="whale.png">
-		<div class="content">
-		    <p class="bold">Conservation poster</p>
-		    <p class="small">Softwares: Photoshop, Illustrator</p>
-		    <p class="small">Monterey Bay National Marine Sanctuary</p>
+				<div class="iframe-wrapper">
+					<iframe
+						src="https://youtube.com/embed/3YAs7QTSXOM" frameborder="0">
+					</iframe>
+				</div>
+				<div class="content">
+					<p class="bold">Adobe Animate animation reel</p>
+					<p class="medium">Softwares: Illustrator, Animate</p>
+					<p class="medium">Butt Talks</p>
+				</div>
+			</div>
+				
+			<div class="card">
+				<img src="assets/whale.png" alt="whale.png">
+				<div class="content">
+					<p class="bold">Conservation poster</p>
+					<p class="medium">Softwares: Photoshop, Illustrator</p>
+					<p class="medium">Monterey Bay National Marine Sanctuary</p>
+				</div>
+			</div>
 		</div>
-		</div>
+		
+		<a href="#top" style="display: block; text-align: right;" class="medium">Back to top</a>
+		
+		<br><br>
+		
 	</div>
-    <a href="#top" style="display: block; text-align: right;" class="medium">Back to top</a>
-	<br>
-	<br>
 	
 	<script>
 		//unicode
@@ -129,5 +138,7 @@
 		  navigator.clipboard.writeText(text)
 		}
 	</script>
+	
     </body>
+	
 </html>
