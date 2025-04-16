@@ -13,10 +13,7 @@ body {
 	padding: 0 5rem;
 }
 
-@media (max-width: 600px) {
-	.container {
-		padding: 0 1rem;
-	}
+
 	
 .title{
 	font-size: 4rem;
