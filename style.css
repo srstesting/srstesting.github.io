@@ -9,10 +9,18 @@ body {
 	background-color:#FFFFFF
 	}
 
-.page-container {
-	padding: 0 5rem;
+
+html {
+	margin-left: 5rem;
+	margin-right: 5rem;
 }
 
+@media (max-width: 600px) {
+	html {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
 
 	
 .title{
