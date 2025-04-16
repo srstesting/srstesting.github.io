@@ -5,93 +5,110 @@
             }
 
 body {
-font-family: "Mulish", sans-serif;
-background-color:#E0E0E0
-}
+	font-family: "Mulish", sans-serif;
+	background-color:#FFFFFF
+	}
 
+.swap-word {
+    font-weight: bold;
+    color: #4bb538;
+    transition: opacity 0.3s ease;
+	}
+	
 .title{
-font-size: 4rem;
-font-weight: 800;
-}
+	font-size: 4rem;
+	font-weight: 800;
+	}
 
 .bold{
-font-size: 2rem;
-font-weight: 600;
-}
+	font-size: 2rem;
+	font-weight: 600;
+	}
+
+.medium{
+	font-size: 1.5rem;
+	font-weight: 400;
+	}
 
 .small{
-font-size: 1.5rem;
-font-weight: 400;
-}
+	font-size: 1.2rem;
+	font-weight: 400;
+	}
 
 a{color:#078adb}
 
-a:link {
-text-decoration: none;
-}
+a:link {text-decoration: none;}
 
 a:hover {
-color: #42aaeb;
-text-decoration: underline;
-}
-
-.hover-underline:hover {
+	color: #42aaeb;
 	text-decoration: underline;
-}
+	}
+
+.hover-underline:hover {text-decoration: underline;}
 
 .pointer {cursor: pointer;}
 
 .popup-text {
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.2s ease, visibility 0.2s ease;
-      margin-top: 10px;
-    }
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+	}
 
 .popup-text.show {
-opacity: 1;
-visibility: visible;
-}
+	opacity: 1;
+	visibility: visible;
+	}
 
 html {
-margin-left: 6rem;
-}
+	margin-left: 5rem;
+	margin-right: 5rem;
+	}
 
 .container{
-display: flex;
-align-items: top;
-justify-content: flex-start;
-flex-wrap: wrap;
-}
+	display: flex;
+	align-items: top;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	}
 
 .card iframe{
-width: 100%
-}
+	width: 90%;
+	display:block;
+	margin:auto;
+	margin-top: 2rem;
+	}
+	
+.card img{
+	width: 90%;
+	display:block;
+	margin:auto;
+	margin-top: 2rem;
+	}
 
 .container .card{
-flex: 0 0 40em;
-margin-right: 1rem;
-margin-bottom: 1rem;
-background: #f7f7f7;
-}
+	flex: 0 0 40em;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+	background: #EDEDED;
+	border-radius: 1rem;
+	}
 
 .card .content{
-margin-right: 1rem;
-margin-left: 1rem;
-}
+	margin-right: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	}
 
 .responsive-iframe{
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-width: 100%;
-height: 100%;
-}
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	}
 
-img {
-  width: 100%;
-}
+img{width: 100%;}
     
 
