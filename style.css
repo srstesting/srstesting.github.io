@@ -13,7 +13,10 @@ body {
 	padding: 0 5rem;
 }
 
-
+@media (max-width: 600px) {
+	.container {
+		padding: 0 1rem;
+	}
 	
 .title{
 	font-size: 4rem;
@@ -59,10 +62,7 @@ a:hover {
 	visibility: visible;
 	}
 
-html {
-	margin-left: 5rem;
-	margin-right: 5rem;
-	}
+
 
 .container{
 	display: flex;
