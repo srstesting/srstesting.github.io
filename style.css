@@ -2,118 +2,122 @@
 	font-family: "Mulish";
 	src: url(assets/Mulish-VariableFont_wght.ttf);
 	font-weight: 400 800;
-	}
+}
 
 body {
 	font-family: "Mulish", sans-serif;
-	background-color:#FFFFFF
-	}
-
-
-html {
-	margin-left: 5rem;
-	margin-right: 5rem;
+	background-color: #fff;
+	margin: 0;
 }
 
-@media (max-width: 600px) {
-	html {
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 1rem;
 }
 
-	
-.title{
-	font-size: 4rem;
+.title {
+	font-size: clamp(2rem, 8vw, 4rem);
 	font-weight: 800;
-	}
+}
 
-.bold{
-	font-size: 2rem;
+.bold {
+	font-size: clamp(1.5rem, 5vw, 2rem);
 	font-weight: 600;
-	}
+}
 
-.medium{
-	font-size: 1.5rem;
+.medium {
+	font-size: clamp(1.1rem, 4vw, 1.5rem);
 	font-weight: 400;
-	}
+}
 
-.small{
-	font-size: 1.2rem;
+.small {
+	font-size: clamp(1rem, 3vw, 1.2rem);
 	font-weight: 400;
-	}
+}
 
-a{color:#078adb}
-
-a:link {text-decoration: none;}
+a {
+	color: #078adb;
+	text-decoration: none;
+}
 
 a:hover {
 	color: #42aaeb;
 	text-decoration: underline;
-	}
+}
 
-.hover-underline:hover {text-decoration: underline;}
+.hover-underline:hover {
+	text-decoration: underline;
+}
 
-.pointer {cursor: pointer;}
+.pointer {
+	cursor: pointer;
+}
 
 .popup-text {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
-	}
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+}
 
 .popup-text.show {
 	opacity: 1;
 	visibility: visible;
-	}
+}
 
-
-
-.container{
+.container {
 	display: flex;
-	align-items: top;
-	justify-content: flex-start;
 	flex-wrap: wrap;
-	}
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
 
-.card iframe{
-	width: 90%;
-	display:block;
-	margin:auto;
-	margin-top: 2rem;
-	}
-	
-.card img{
-	width: 90%;
-	display:block;
-	margin:auto;
-	margin-top: 2rem;
-	}
-
-.container .card{
-	flex: 0 0 40em;
-	margin-right: 2rem;
-	margin-bottom: 2rem;
-	background: #EDEDED;
+.card {
+	flex: 1 1 100%;
+	background: #ededed;
 	border-radius: 1rem;
-	}
+	padding: 1rem;
+}
 
-.card .content{
-	margin-right: 2rem;
-	margin-left: 2rem;
-	margin-bottom: 2rem;
+@media (min-width: 768px) {
+	.card {
+		flex: 1 1 50%;
 	}
+}
 
-.responsive-iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
+.card iframe,
+.card img {
 	width: 100%;
-	height: 100%;
-	}
+	max-width: 800px;
+	height: auto;
+	display: block;
+	margin: 1rem auto;
+	border-radius: 0.5rem;
+}
 
-img{width: 100%;}
-    
+.card .content {
+	margin-top: 1rem;
+	max-width: 800px;
+	margin: 1rem auto;
+}
+
+.iframe-wrapper {
+    position: relative;
+    width: 100%;
+	max-width: 800px;
+	margin: 1rem auto;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 
