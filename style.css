@@ -1,18 +1,21 @@
 @font-face {
-            font-family: "Mulish";
-            src: url(assets/Mulish-VariableFont_wght.ttf);
-            font-weight: 400 800;
-            }
+	font-family: "Mulish";
+	src: url(assets/Mulish-VariableFont_wght.ttf);
+	font-weight: 400 800;
+	}
 
 body {
 	font-family: "Mulish", sans-serif;
 	background-color:#FFFFFF
 	}
 
-.swap-word {
-    font-weight: bold;
-    color: #4bb538;
-    transition: opacity 0.3s ease;
+.page-container {
+	padding: 0 5rem;
+}
+
+@media (max-width: 600px) {
+	.container {
+		padding: 0 1rem;
 	}
 	
 .title{
